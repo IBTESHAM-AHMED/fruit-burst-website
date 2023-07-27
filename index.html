@@ -158,11 +158,11 @@
             <section class="hidden lg:block absolute left-[10%] bottom-[100px] lg:left-[4%] 2xl:left-[18%]">
                 <div
                     class="flex items-center justify-center gap-10 bg-white shadow-lg shadow-gray-300 xl:w-[1196px] lg:w-[950px]  rounded-md">
-                    <div class="p-6 text-center "><img src="images/fruit1.png" alt=""><span>Grape</span></div>
-                    <div class="p-6 text-center "><img src="images/fruit2.png" alt=""><span>Orange</span></div>
-                    <div class="p-6 text-center "><img src="images/fruit3.png" alt=""><span>Mango</span></div>
-                    <div class="p-6 text-center "><img src="images/fruit4.png" alt=""><span>Strawberry</span></div>
-                    <div class="p-6 text-center "><img src="images/fruit5.png" alt=""><span>Pomegranate</span></div>
+                    <div class="p-6 text-center "><img src="./images/fruit1.png" alt=""><span>Grape</span></div>
+                    <div class="p-6 text-center "><img src="./images/fruit2.png" alt=""><span>Orange</span></div>
+                    <div class="p-6 text-center "><img src="./images/fruit3.png" alt=""><span>Mango</span></div>
+                    <div class="p-6 text-center "><img src="./images/fruit4.png" alt=""><span>Strawberry</span></div>
+                    <div class="p-6 text-center "><img src="./images/fruit5.png" alt=""><span>Pomegranate</span></div>
 
                 </div>
             </section>
@@ -172,7 +172,8 @@
         <section class="flex items-center justify-between flex-col lg:flex-row text-center lg:text-left mt-[10%]">
             <div class="flex-1">
                 <h3 class="text-[#121212] text-5xl font-extrabold">Deal of the day</h3>
-                <p class="text-base font-medium text-[#12121299] my-6 px-10 lg:p-0">Grab our best deals before the time runs out.Here you can find the best seasonal fruits at cheapest price!!!!!!!</p>
+                <p class="text-base font-medium text-[#12121299] my-6 px-10 lg:p-0">Grab our best deals before the time
+                    runs out.Here you can find the best seasonal fruits at cheapest price!!!!!!!</p>
             </div>
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
                 <div class="flex flex-col">
@@ -190,7 +191,7 @@
                 <div class="flex flex-col">
                     <span class="countdown font-mono text-5xl">
                         <span style="--value:25;"></span>
-                        
+
                     </span>
                     min
                 </div>
@@ -202,10 +203,283 @@
                 </div>
             </div>
         </section>
+
+
+
+
         <!-- modal part -->
-        <section>
+        <section class="grid lg:grid-cols-4 grid-cols-1 gap-4 mx-5 lg:mx-0 my-12 md:grid-cols-2">
+            <!-- 1st Card -->
+            <div class="text-center py-[40px] px-[49px] border rounded-md hover:bg-slate-200 bg-white">
+                <div class="flex justify-center"><img src="./images/fruit6.png" alt=""></div>
+                <h2 class="text-2xl font-bold text-[#121212] mt-12">12.90$ - 18.85$</h2>
+                <hr class="my-6">
+                <p class="text-[#12121299]">Apples</p>
+                <div class="flex justify-center mt-6 mb-7">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    </div>
+
+                </div>
+                <!-- modal1 -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-ghost tex" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                        <div class="flex justify-center"><img src="./images/fruit6.png" alt=""></div>
+                        <div>
+                            <h3 class="text-[#121212] font-extrabold text-5xl mt-6">Apples</h3>
+                            <p class="text-[#12121299] mt-6 mb-8">Professional employees are there for you
+                                to pick the
+                                most <br> amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <div class="modal-action justify-center">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn btn-outline border-cpink text-cpink">Close</button>
+                            <button class="btn text-white bg-cpink">Buy Now</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+
+
+
+            <!-- 2nd Card -->
+            <div class="text-center py-[50px] px-[49px] border rounded-md hover:bg-slate-200 bg-white">
+                <div class="flex justify-center"><img src="./images/fruit7.png" alt=""></div>
+                <h2 class="text-2xl font-bold text-[#121212] mt-12">12.90$ - 18.85$</h2>
+                <hr class="my-6">
+                <p class="text-[#12121299]">Orange</p>
+                <div class="flex justify-center mt-6 mb-7">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    </div>
+                </div>
+                <!-- 2ndmodal -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-ghost tex" onclick="my_modal_2.showModal()">Details</button>
+                <dialog id="my_modal_2" class="modal">
+                    <form method="dialog" class="modal-box">
+                        <div class="flex justify-center"><img src="./images/fruit7.png" alt=""></div>
+                        <div>
+                            <h3 class="text-[#121212] font-extrabold text-5xl mt-6">Orange</h3>
+                            <p class="text-[#12121299] mt-6 mb-8">Professional employees are there for you
+                                to pick the
+                                most <br> amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <div class="modal-action justify-center">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn btn-outline border-cpink text-cpink">Close</button>
+                            <button class="btn text-white bg-cpink">Buy Now</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+
+
+
+
+
+            <!-- 3rd Card -->
+            <div class="text-center py-[50px] px-[49px] border rounded-md hover:bg-slate-200 bg-white">
+                <div class="flex justify-center"><img src="./images/fruit8.png" alt=""></div>
+                <h2 class="text-2xl font-bold text-[#121212] mt-12">12.90$ - 18.85$</h2>
+                <hr class="my-6">
+                <p class="text-[#12121299]">Red Dragon</p>
+                <div class="flex justify-center mt-6 mb-7">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    </div>
+                </div>
+                <!-- 3rdmodal -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-ghost tex" onclick="my_modal_3.showModal()">Details</button>
+                <dialog id="my_modal_3" class="modal">
+                    <form method="dialog" class="modal-box">
+                        <div class="flex justify-center"><img src="./images/fruit8.png" alt=""></div>
+                        <div>
+                            <h3 class="text-[#121212] font-extrabold text-5xl mt-6">Red Dragon</h3>
+                            <p class="text-[#12121299] mt-6 mb-8">Professional employees are there for you
+                                to pick the
+                                most <br> amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <div class="modal-action justify-center">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn btn-outline border-cpink text-cpink">Close</button>
+                            <button class="btn text-white bg-cpink">Buy Now</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
+
+            <!-- 4th Card -->
+            <div class="text-center py-[50px] px-[49px] border rounded-md hover:bg-slate-200 bg-white">
+                <div class="flex justify-center"><img src="./images/fruit9.png" alt=""></div>
+                <h2 class="text-2xl font-bold text-[#121212] mt-12">12.90$ - 18.85$</h2>
+                <hr class="my-6">
+                <p class="text-[#12121299]">Banana</p>
+                <div class="flex justify-center mt-6 mb-7">
+                    <div class="rating">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                    </div>
+                </div>
+                <!-- 4thmodal -->
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-ghost tex" onclick="my_modal_4.showModal()">Details</button>
+                <dialog id="my_modal_4" class="modal">
+                    <form method="dialog" class="modal-box">
+                        <div class="flex justify-center"><img src="./images/fruit9.png" alt=""></div>
+                        <div>
+                            <h3 class="text-[#121212] font-extrabold text-5xl mt-6">Banana</h3>
+                            <p class="text-[#12121299] mt-6 mb-8">Professional employees are there for you
+                                to pick the
+                                most <br> amazing and fresh
+                                fruits.</p>
+                        </div>
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                        </div>
+                        <div class="modal-action justify-center">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn btn-outline border-cpink text-cpink">Close</button>
+                            <button class="btn text-white bg-cpink">Buy Now</button>
+                        </div>
+                    </form>
+                </dialog>
+            </div>
 
         </section>
+        <div class=" flex justify-center">
+            <button class="btn justify-center bg-cpink font-lato lg:text-xl text-lg text-white rounded-md">Shop
+                All</button>
+        </div>
+
+        <!-- Meet the team section -->
+        <section class="mt-[160px] mx-5 lg:mx-0">
+            <div class="hero min-h-[60vh]" style="background-image: url('./images/team.png');">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content flex-col text-center text-neutral-content">
+                    <div class="max-w-md ">
+                        <h1 class="mb-5 pt-28 text-5xl font-bold">Meet the team section</h1>
+                        <p class="mb-5">Serving Deliciousness with a Smile!At FRUIT BURST, we take immense pride in our
+                            commitment to delivering scrumptious meals straight to your doorstep. Behind our seamless
+                            food delivery service lies a passionate and dedicated team, each member driven by the shared
+                            vision of delighting our customers with every order. Allow us to introduce the faces.</p>
+
+                    </div>
+                    <!-- 4 members -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-10 lg:gap-5">
+                        <!-- 1stperson -->
+                        <div class="avatar  flex-col ">
+                            <div class="w-24 mx-12 rounded-full">
+                                <img src="./images/member1.png" />
+                            </div>
+                            <div>
+                                <h5 class="text-2xl font-bold text-white">Awlad Hossain</h5>
+                                <p class="font-medium text-base text-white">Fruits Expert</p>
+                                <div>
+                                    <i class="fa-brands fa-facebook" style="color: #F85559;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #F85559;"></i>
+                                    <i class="fa-brands fa-linkedin" style="color: #F85559;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2ndperson -->
+                        <div class="avatar  flex-col ">
+                            <div class="w-24 mx-12 rounded-full">
+                                <img src="./images/member2.png" />
+                            </div>
+                            <div>
+                                <h5 class="text-2xl font-bold text-white">Safia Chowdhury</h5>
+                                <p class="font-medium text-base text-white">Fruits Expert</p>
+                                <div>
+                                    <i class="fa-brands fa-facebook" style="color: #F85559;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #F85559;"></i>
+                                    <i class="fa-brands fa-linkedin" style="color: #F85559;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rdpersn -->
+                        <div class="avatar  flex-col  ">
+                            <div class="w-24 mx-12 rounded-full">
+                                <img src="./images/member3.png" />
+                            </div>
+                            <div>
+                                <h5 class="text-2xl font-bold text-white">Rokib Hossain</h5>
+                                <p class="font-medium text-base text-white">Fruits Expert</p>
+                                <div>
+                                    <i class="fa-brands fa-facebook" style="color: #F85559;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #F85559;"></i>
+                                    <i class="fa-brands fa-linkedin" style="color: #F85559;"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4thperson -->
+                        <div class="avatar  flex-col ">
+                            <div class="w-24 mx-12 rounded-full">
+                                <img src="./images/member4.png" />
+                            </div>
+                            <div>
+                                <h5 class="text-2xl font-bold text-white">Chaity</h5>
+                                <p class="font-medium text-base text-white">Fruits Expert</p>
+                                <div>
+                                    <i class="fa-brands fa-facebook" style="color: #F85559;"></i>
+                                    <i class="fa-brands fa-twitter" style="color: #F85559;"></i>
+                                    <i class="fa-brands fa-linkedin" style="color: #F85559;"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+        </section>
+
+
 
 
 
